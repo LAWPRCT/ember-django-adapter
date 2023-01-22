@@ -11,6 +11,7 @@ module.exports = {
       app = app.app;
     }
 
-    app.import('vendor/ember-django-adapter/register-version.js');
+    // This uses a private API with an Ember global, so it's not working in Ember 4.
+    // app.import('vendor/ember-django-adapter/register-version.js');
   }
 };
